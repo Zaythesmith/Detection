@@ -1,5 +1,5 @@
 void setup() {
-  pinMode(7,INPUT);
+  pinMode(2,INPUT);
       Serial.begin(9600);
 }
 
@@ -8,7 +8,7 @@ void loop(){
     int sensor = 0;
     int state = 0;
 
-  sensor = digitalRead(7);
+  sensor = digitalRead(2);
   if (sensor == 1 && state == 0){
     Serial.println("On1");
     state = 1;
